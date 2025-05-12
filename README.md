@@ -11,12 +11,7 @@ This project implements an Aquaverse Bugaboo Shop processing iac using AWS CDK.
 
 ### Installation
 
-1.  Clone the repository:
-    ```bash
-    git clone <repository-url>
-    cd e-ticket-pipeline
-    ```
-2.  Install dependencies:
+1.  Install dependencies:
     ```bash
     npm install
     ```

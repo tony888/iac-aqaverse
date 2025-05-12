@@ -1,10 +1,10 @@
 #!/opt/homebrew/opt/node/bin/node
 import * as cdk from 'aws-cdk-lib';
-import { ETicketPipelineStack } from '../lib/aquaverse-stack';
+import { AquaverseIACStack } from '../lib/aquaverse-stack';
 import * as config from "../config/env";
 
 const app = new cdk.App();
-new ETicketPipelineStack(app, `ETicketPipelineStack-${config.env.NODE_ENV}`, {
+new AquaverseIACStack(app, `AquaverseIACStack-${config.env.NODE_ENV}`, {
   env: {
     account: config.env.CDK_DEFAULT_ACCOUNT,
     region: config.env.CDK_DEFAULT_REGION,
