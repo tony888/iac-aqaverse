@@ -5,9 +5,7 @@ import * as config from "../config/env";
 
 test('SQS Queue Created', () => {
   const app = new cdk.App();
-    // WHEN
   const stack = new AquaverseIACStack.AquaverseIACStack(app, `Aquaverse-test-${config.env.NODE_ENV}`);
-    // THEN
   const template = Template.fromStack(stack);
 
   template.hasResourceProperties('AWS::SQS::Queue', {
